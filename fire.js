@@ -6,14 +6,6 @@ window.onload = function() {
 	initAnimate();
 };
 
-document.getElementById("iframMusic").onload = function(){
-    var music = document.getElementById("music");
-    music.src = 'music/dream.mp3';
-    music.oncanplay = function(){
-        music.play();
-    };
-};
-
 function initAnimate() {
     drawBg();
     animate()
@@ -538,4 +530,5 @@ javascript:
 		}
 		return overWan ? getWan(overWan) + '万' + getWan(noWan) : getWan(num)
 	}
+
 })();
