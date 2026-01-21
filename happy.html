@@ -153,16 +153,7 @@
 <script src="./js/Stage_0.1.4.js"></script>
 <script src="./js/MyMath.js"></script>
 <script src="./js/script.js"></script>
-<script>
-const music = document.getElementById('music');
-function startMusicOnce() {
-  music.play().catch(()=>{}); // 忽略被阻止的错误
-  document.removeEventListener('click', startMusicOnce);
-  document.removeEventListener('touchstart', startMusicOnce);
-}
-document.addEventListener('click', startMusicOnce, {passive:true});
-document.addEventListener('touchstart', startMusicOnce, {passive:true});
 
-</script>
 </body>
 </html>
+
